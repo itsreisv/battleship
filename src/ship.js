@@ -1,10 +1,14 @@
 // Factory Function to create ships
 
 export default class Ship {
-  constructor (length, name, position) {
+  constructor (length, name, Vposition, Wposition, Xposition, Yposition, Zposition) {
     this.length = length;
     this.name = name;
-    this.position = position;
+    this.Vposition = Vposition;
+    this.Wposition = Wposition;
+    this.Xposition = Xposition;
+    this.Yposition = Yposition;
+    this.Zposition = Zposition;
     this.hits = 0;
     this.sunk = false;
   }
