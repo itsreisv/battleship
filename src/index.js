@@ -1,14 +1,15 @@
 import Ship from "./ship";
 import Gameboard from "./gameboard";
+import Player from "./player";
 
-let newGame = new Gameboard([]);
-newGame.placeShips(5, "v", 3, "Destroyer")
-newGame.placeShips(10, "v", 4, "Cruiser")
-newGame.recieveAttack(5)
-newGame.recieveAttack(15)
-newGame.recieveAttack(25)
-newGame.gameOver();
-console.log(newGame.ships[1])
-console.log(newGame.ships[0])
-console.log(newGame)
-console.log(newGame.ships[0]['name'])
+let playerOne = new Player("Reis");
+let playerTwo = new Player("Computer")
+console.log(playerOne, playerTwo)
+
+playerOne.gameboard.placeShips(5, 'v', 3, "Patrol")
+
+
+playerOne.gameboard.recieveAttack(5);
+playerOne.gameboard.recieveAttack(15);
+playerOne.gameboard.recieveAttack(25);
+console.log(playerOne.gameboard.gameOver())
