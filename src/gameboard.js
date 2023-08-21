@@ -72,7 +72,9 @@ export default class Gameboard {
   gameOver() {
     for (let i = 0; i < this.ships.length; i++) {
       if (this.ships[i].sunk == true) {
-        return "Game Over"
+        return true
+      } else {
+        return false
       }
     }
   }
