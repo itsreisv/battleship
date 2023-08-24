@@ -25,10 +25,4 @@ export default class Game {
     playerTwo.gameboard.placeShips(74, 'h', 3, "Submarine")
     playerTwo.gameboard.placeShips(87, 'h', 2, "Patrol Boat")
   }
-  game() {
-    while(this.playerOne.gameOver() == false && this.playerTwo.gameOver() == false) {
-      this.playerOne.computerAttack();
-      this.playerTwo.recieveAttack();
-    }
-  }
 }

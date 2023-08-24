@@ -32,10 +32,32 @@ h1 {
   width: 40rem;
   height: 40rem;
   border: .5rem solid black;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .computer-box {
   width: 40rem;
   height: 40rem;
   border: .5rem solid black;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid {
+  border: black solid 1px;
+}
+
+.gridp {
+  border: black solid 1px;
+}
+
+.grid:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.grid:active {
+  background-color: rgba(0,0,0,0.8);
 }
