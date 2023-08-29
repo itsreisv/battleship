@@ -36,7 +36,7 @@ export default class Gameboard {
   }
   checkValidity(location) {
     for (let i = 0; i < this.board.length; i++) {
-      if(this.board[location].hasShip == true) {
+      if(this.board[location].hasShip == true || this.board[location].hasShip == undefined) {
         return false;
       } else {
         return true;

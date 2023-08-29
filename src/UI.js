@@ -12,10 +12,11 @@ const UI = (() => {
     for (let i = 0; i < 100; i++) {
       const newDiv = document.createElement('div')
       newDiv.setAttribute('class', 'gridp ' + 'p' + i)
+      newDiv.setAttribute('ondrop', 'drop(event)');
+      newDiv.setAttribute('ondragover', 'allowDrop(event)');
       playerBoard.appendChild(newDiv)
     }
   }
-
   const drawComputerGrid = () => {
     const computerBoard = document.querySelector('.computer-box');
     for (let i = 0; i < 100; i++) {
@@ -24,7 +25,6 @@ const UI = (() => {
       computerBoard.appendChild(newDiv)
     }
   }
-
   const sendPlayerAttack = () => {
     for(let i = 0; i < newGame.players[1].gameboard.board.length; i++) {
       let elements = document.querySelectorAll('.c'+i)
@@ -79,8 +79,6 @@ const UI = (() => {
         myArray[target].style.backgroundColor = 'red'
       }
   }
-
-
   const drawShips = () => {
     for (let i = 0; i < newGame.players[0].gameboard.board.length; i++) {
       if (newGame.players[0].gameboard.board[i].hasShip == true) {
@@ -88,14 +86,12 @@ const UI = (() => {
         elements.forEach((div) => {
           div.style.backgroundColor = 'black'
         })
-        
       }
     }
-    for(let j = 0; j < newGame.players[0].gameboard.board.length; j++) {
-      if (newGame.players[0].gameboard.board[j].hasShip == true) {
+    for(let j = 0; j < newGame.players[1].gameboard.board.length; j++) {
+      if (newGame.players[1].gameboard.board[j].hasShip == true) {
         let elements = document.querySelectorAll('.c'+j)
         elements.forEach((div) => {
-          div.style.backgroundColor = 'black'
         })
       }
     }
@@ -107,8 +103,7 @@ const UI = (() => {
       return console.log('Player Wins!')
     } else {
       return;
-    }
-    
+    } 
   }
 
 return {drawPlayerGrid, drawComputerGrid, sendPlayerAttack, drawShips, sendComputerAttack, gameLoop}

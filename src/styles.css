@@ -61,3 +61,247 @@ h1 {
 .grid:active {
   background-color: rgba(0,0,0,0.8);
 }
+
+.start-modal {
+  width: 45vw;
+  height: 68%;
+  margin-left: 800px;
+  background-color: rgba(0,0,0,1);
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:.15fr 1fr ;
+}
+
+.modal-header {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: white 3px solid;
+  margin-bottom: 10px;
+}
+
+.ships {
+display: flex;
+flex-wrap: wrap;
+padding: 20px;
+gap: 15px;
+}
+
+.ships > div {
+background-color: red;
+width: 200px;
+height: 200px;
+}
+
+.carrier > div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+}
+
+.carrierTwo > div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+}
+
+.carrier {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.carrierTwo {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.battleship > div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+}
+
+.battleshipTwo > div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+}
+
+.battleship {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.battleshipTwo {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.destroyer > div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+}
+
+.destroyerTwo > div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+}
+
+.destroyer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.destroyerTwo {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submarine > div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+}
+
+.submarineTwo > div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+}
+
+.submarine {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submarineTwo {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.patrol > div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+}
+
+.patrolTwo > div {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border: black solid 1px;
+}
+
+.patrol {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.patrolTwo {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotate {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.rotate-two {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.rotate-three {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.rotate-four {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.rotate-five {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.button-container {
+  position: absolute;
+  left: 2rem;
+  top: 7.5rem;
+}
+
+.button-container-two {
+  position: absolute;
+  left: 16.5rem;
+  top: 7.5rem;
+}
+
+.button-container-three {
+  position: absolute;
+  left: 31.25rem;
+  top: 7.5rem;
+}
+
+.button-container-four {
+  position: absolute;
+  left: 2rem;
+  top: 25rem;
+}
+
+.button-container-five {
+  position: absolute;
+  top: 25rem;
+  left: 16.5rem;
+
+}
