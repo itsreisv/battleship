@@ -32,16 +32,13 @@ export default class Player {
     let target = Math.floor(Math.random() * 100);
     if (this.gameboard.board[target].isShot == false && this.gameboard.board[target].hasShip == false) {
       this.gameboard.board[target].isShot = true;
-      console.log('miss')
     } else if (this.gameboard.board[target].isShot == true) {
-      console.log('already shot here')
     } else if (this.gameboard.board[target].isShot == false && this.gameboard.board[target].hasShip == true) {
       this.gameboard.board[target].isShot = true;
       for (let i = 0; i < this.gameboard.ships.length; i++) {
         if (this.gameboard.ships[i]['name'] == this.gameboard.board[target].shipName) {
           this.gameboard.ships[i].hit(true);
           this.gameboard.ships[i].isSunk();
-          console.log('hit')
         }
       }
     }

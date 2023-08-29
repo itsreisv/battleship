@@ -11,7 +11,7 @@ export default class Ship {
     if (x == true) {
      return this.hits++
     } else {
-      return console.log("Missed")
+      return 
     }
   }
   isSunk() {
